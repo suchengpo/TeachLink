@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TeachLink</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Student">Student</string>
+    <string name="Teacher">Teacher</string>
+    <string name="Welcome">Welcome</string>
+
+    <string name="ErrorMessage1">Error Username or Error Password</string>
+</resources>

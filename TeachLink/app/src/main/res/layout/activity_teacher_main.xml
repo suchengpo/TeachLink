@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a303.teachlink.TeacherMain">
+
+    <TextView
+        android:id="@+id/TV_Teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Teacher"
+        android:textSize="22dp"/>
+
+    <ImageButton
+        android:id="@+id/IB_T_Rollcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_Teacher"
+        />
+
+    <ImageButton
+        android:id="@+id/IB_T_Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_T_Rollcall"/>
+
+    <ImageButton
+        android:id="@+id/IB_T_Push"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_T_Question"/>
+
+    <ImageButton
+        android:id="@+id/IB_T_Discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_T_Push"/>
+
+    <ImageButton
+        android:id="@+id/IB_T_Analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_T_Discuss"/>
+
+    <ImageButton
+        android:id="@+id/IB_T_History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_T_Analyze"/>
+
+
+</RelativeLayout>
