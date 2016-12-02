@@ -22,7 +22,12 @@
         <activity android:name=".TeacherPush" />
         <activity android:name=".TeacherDiscuss" />
         <activity android:name=".TeacherAnalyze" />
-        <activity android:name=".TeacherHistory"></activity>
+        <activity android:name=".TeacherHistory" />
+        <activity android:name=".StudentAnalyze" />
+        <activity android:name=".StudentDiscuss" />
+        <activity android:name=".StudentHistory" />
+        <activity android:name=".StudentRollcall" />
+        <activity android:name=".StudentQuestion"></activity>
     </application>
 
 </manifest>

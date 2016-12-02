@@ -17,4 +17,38 @@
         android:text="@string/Student"
         android:textSize="22dp"/>
 
+    <ImageButton
+        android:id="@+id/IB_S_Discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_Student"/>
+
+
+    <ImageButton
+        android:id="@+id/IB_S_Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_S_Discuss"/>
+
+    <ImageButton
+        android:id="@+id/IB_S_Rollcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_S_Question" />
+
+
+
+    <ImageButton
+        android:id="@+id/IB_S_Analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_S_Rollcall"/>
+
+    <ImageButton
+        android:id="@+id/IB_S_History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IB_S_Analyze"/>
+
+
 </RelativeLayout>
