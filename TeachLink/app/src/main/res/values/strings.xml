@@ -9,6 +9,14 @@
     <string name="Class">Class</string>
     <string name="Time">Time</string>
     <string name="Send">Send</string>
+    <string name="Type">Type</string>
+    <string name="Tag">Tag</string>
+    <string name="Question">Question</string>
+    <string name="Answer">Answer</string>
+    <string name="AnswerA">Answer A</string>
+    <string name="AnswerB">Answer B</string>
+    <string name="AnswerC">Answer C</string>
+    <string name="AnswerD">Answer D</string>
 
     <string name="ErrorMessage1">Error Username or Error Password</string>
     <string name="ErrorMessage2">Error Class Name</string>

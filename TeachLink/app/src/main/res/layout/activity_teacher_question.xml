@@ -10,7 +10,83 @@
     tools:context="com.example.a303.teachlink.TeacherQuestion">
 
     <TextView
+        android:id="@+id/TV_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher Question"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/TV_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Type"
+        android:layout_below="@+id/TV_Title"/>
+
+    <EditText
+        android:id="@+id/ET_Type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Teacher Question"/>
+        android:layout_below="@+id/TV_Type"/>
+
+    <TextView
+        android:id="@+id/TV_Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tag"
+        android:layout_below="@+id/ET_Type"/>
+
+    <EditText
+        android:id="@+id/ET_Tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_Tag"/>
+
+    <TextView
+        android:id="@+id/TV_Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Question"
+        android:layout_below="@+id/ET_Tag"/>
+
+    <EditText
+        android:id="@+id/ET_Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_Question"/>
+
+    <TextView
+        android:id="@+id/TV_Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Answer"
+        android:layout_below="@+id/ET_Question"/>
+
+    <EditText
+        android:id="@+id/ET_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AnswerA"
+        android:layout_below="@+id/TV_Answer"/>
+
+    <EditText
+        android:id="@+id/ET_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AnswerB"
+        android:layout_below="@+id/ET_A"/>
+
+    <EditText
+        android:id="@+id/ET_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AnswerC"
+        android:layout_below="@+id/ET_B"/>
+
+    <EditText
+        android:id="@+id/ET_D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AnswerD"
+        android:layout_below="@+id/ET_C"/>
 </RelativeLayout>
