@@ -38,7 +38,7 @@ public class Loging extends AppCompatActivity {
 
     private void checkIdentity() {
         Context context=this;
-        identity=2;//假資料1
+        identity=1;//假資料1
         user=new User(username,password,identity);
         if (identity==1)//師
         {

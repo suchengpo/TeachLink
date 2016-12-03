@@ -27,7 +27,8 @@
         <activity android:name=".StudentDiscuss" />
         <activity android:name=".StudentHistory" />
         <activity android:name=".StudentRollcall" />
-        <activity android:name=".StudentQuestion"></activity>
+        <activity android:name=".StudentQuestion" />
+        <activity android:name=".ScanQR"></activity>
     </application>
 
 </manifest>

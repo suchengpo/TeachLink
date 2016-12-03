@@ -6,6 +6,11 @@
     <string name="Student">Student</string>
     <string name="Teacher">Teacher</string>
     <string name="Welcome">Welcome</string>
+    <string name="Class">Class</string>
+    <string name="Time">Time</string>
+    <string name="Send">Send</string>
 
     <string name="ErrorMessage1">Error Username or Error Password</string>
+    <string name="ErrorMessage2">Error Class Name</string>
+    <string name="ErrorMessage3">Error Time</string>
 </resources>
