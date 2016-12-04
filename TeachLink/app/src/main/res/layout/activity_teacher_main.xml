@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFD9EC"
     tools:context="com.example.a303.teachlink.TeacherMain">
 
     <TextView
@@ -15,44 +16,67 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/Teacher"
-        android:textSize="22dp"/>
+        android:textSize="22dp"
+
+        />
 
     <ImageButton
         android:id="@+id/IB_T_Rollcall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140sp"
+        android:layout_height="140sp"
         android:layout_below="@id/TV_Teacher"
+        android:src="@drawable/roll_table"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="22dp"
         />
 
     <ImageButton
         android:id="@+id/IB_T_Question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/IB_T_Rollcall"/>
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_below="@id/TV_Teacher"
+        android:layout_toRightOf="@+id/IB_T_Rollcall"
+        android:src="@drawable/question"
+        android:scaleType="centerInside"
+        />
 
     <ImageButton
         android:id="@+id/IB_T_Push"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/IB_T_Question"/>
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_below="@id/IB_T_Question"
+        android:src="@drawable/notification"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="22dp"
+        />
 
     <ImageButton
         android:id="@+id/IB_T_Discuss"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/IB_T_Push"/>
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_below="@id/IB_T_Rollcall"
+        android:layout_toRightOf="@+id/IB_T_Push"
+        android:src="@drawable/discussion"
+        android:scaleType="centerInside"
+        />
 
     <ImageButton
         android:id="@+id/IB_T_Analyze"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/IB_T_Discuss"/>
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_below="@id/IB_T_Discuss"
+        android:src="@drawable/teacher_analysis"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="22dp"/>
 
     <ImageButton
         android:id="@+id/IB_T_History"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/IB_T_Analyze"/>
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_below="@id/IB_T_Discuss"
+        android:src="@drawable/history"
+        android:layout_toRightOf="@+id/IB_T_Analyze"
+        android:scaleType="centerInside"/>
 
 
 </RelativeLayout>
