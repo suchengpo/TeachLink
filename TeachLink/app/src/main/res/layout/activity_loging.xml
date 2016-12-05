@@ -27,7 +27,13 @@
         android:text="@string/Login"
         android:textSize="20dp"
         android:layout_below="@id/ET_Password"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/BT_Login"
+        android:src="@drawable/login_img"
+        android:layout_margin="32dp"/>
 
 
 </RelativeLayout>
