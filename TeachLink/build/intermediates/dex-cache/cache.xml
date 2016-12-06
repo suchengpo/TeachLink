@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="5756254db3046a314fe578f1402e5cd99fb196b0">
+        sha1="a6332459bc620c7b0d801a5a49b8b156c3477a2b">
         <dex dex="C:\Users\303\Documents\GitHub\TeachLink\TeachLink\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_249158c1e74283299c3820ce87933fec43ff1132\classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="b488d78af53cd55d1bbf6a82b84a356a44182812">
+        sha1="1c868e0dd03bf09ae6ee10bffc8f1ca2c269bfd2">
         <dex dex="C:\Users\303\Documents\GitHub\TeachLink\TeachLink\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8768bb682bab11c99314503c20d0552ccadf84d9\classes.dex" />
     </item>
     <item
@@ -144,6 +144,15 @@
         revision="24.0.2"
         sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
         <dex dex="C:\Users\303\Documents\GitHub\TeachLink\TeachLink\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_10cf011f08d5026b71ded4460ff302708ed21c21\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\303\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="C:\Users\303\Documents\GitHub\TeachLink\TeachLink\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.3.0_05bcc6256993ab3595f36b3dd49f3b0f19cdeb94\classes.dex" />
     </item>
     <item
         is-multidex="true"
