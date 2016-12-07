@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="a6332459bc620c7b0d801a5a49b8b156c3477a2b">
+        sha1="944c5904200546eafb381776b56d5c9b0cb70a09">
         <dex dex="C:\Users\303\Documents\GitHub\TeachLink\TeachLink\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_249158c1e74283299c3820ce87933fec43ff1132\classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="1c868e0dd03bf09ae6ee10bffc8f1ca2c269bfd2">
+        sha1="b8101537cef75e477a42df11e54170ce4db60fad">
         <dex dex="C:\Users\303\Documents\GitHub\TeachLink\TeachLink\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8768bb682bab11c99314503c20d0552ccadf84d9\classes.dex" />
     </item>
     <item
