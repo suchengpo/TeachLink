@@ -10,7 +10,37 @@
     tools:context="com.example.a303.teachlink.StudentQuestion">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/TV_Title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Question"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/Choose_Answer"/>
+
+    <Button
+        android:id="@+id/BT_AnswerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:layout_below="@id/TV_Title"/>
+
+    <Button
+        android:id="@+id/BT_AnswerB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:layout_below="@+id/BT_AnswerA"/>
+
+    <Button
+        android:id="@+id/BT_AnswerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:layout_below="@+id/BT_AnswerB"/>
+
+    <Button
+        android:id="@+id/BT_AnswerD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:layout_below="@+id/BT_AnswerC"/>
 </RelativeLayout>
