@@ -33,7 +33,8 @@
         android:layout_height="300dp"
         android:layout_below="@id/BT_Login"
         android:src="@drawable/login_img"
-        android:layout_margin="32dp"/>
+        android:layout_margin="32dp"
+        android:layout_centerInParent="true"/>
 
 
 </RelativeLayout>

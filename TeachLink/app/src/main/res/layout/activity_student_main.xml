@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FFE6D9"
+    android:background="@drawable/st_back"
     tools:context="com.example.a303.teachlink.StudentMain">
 
     <TextView
@@ -18,54 +18,78 @@
         android:text="@string/Student"
         android:textSize="22dp"/>
 
-    <ImageButton
-        android:id="@+id/IB_S_Discuss"
-        android:layout_width="140sp"
-        android:layout_height="140sp"
-        android:layout_below="@id/TV_Student"
-        android:src="@drawable/discussion"
-        android:scaleType="centerInside"
-        android:layout_marginLeft="22dp"/>
-
-
-    <ImageButton
-        android:id="@+id/IB_S_Question"
-        android:layout_width="140sp"
-        android:layout_height="140sp"
-        android:layout_below="@id/TV_Student"
-        android:layout_toRightOf="@+id/IB_S_Discuss"
-        android:src="@drawable/question"
-        android:scaleType="centerInside"
-        />
 
     <ImageButton
         android:id="@+id/IB_S_Rollcall"
-        android:layout_width="280sp"
-        android:layout_height="140sp"
-        android:layout_below="@id/IB_S_Discuss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_Student"
         android:src="@drawable/sign_in"
         android:scaleType="centerInside"
-        android:layout_marginLeft="22dp"/>
+        android:background="#00000000"
+        />
 
-
-    <ImageButton
-        android:id="@+id/IB_S_Analyze"
-        android:layout_width="140sp"
-        android:layout_height="140sp"
-        android:src="@drawable/studet_analysis"
-        android:scaleType="centerInside"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="450sp"
+        android:orientation="vertical"
+        android:id="@+id/laout_student_left"
         android:layout_below="@id/IB_S_Rollcall"
-        android:layout_marginLeft="22dp"/>
+        android:paddingLeft="@dimen/activity_horizontal_margin">
 
-    <ImageButton
-        android:id="@+id/IB_S_History"
-        android:layout_width="140sp"
-        android:layout_height="140sp"
-        android:src="@drawable/history"
-        android:scaleType="centerInside"
-        android:layout_below="@id/IB_S_Rollcall"
-        android:layout_toRightOf="@+id/IB_S_Analyze"
-     />
+
+        <ImageButton
+            android:id="@+id/IB_S_Discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/discussion2"
+            android:scaleType="centerInside"
+            android:background="#00000000"
+            />
+
+        <ImageButton
+            android:id="@+id/IB_S_Analyze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/studet_analysis"
+            android:scaleType="centerInside"
+            android:background="#00000000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="450sp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/laout_student_left"
+        android:layout_below="@id/IB_S_Rollcall">
+
+
+        <ImageButton
+            android:id="@+id/IB_S_Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/question2"
+            android:scaleType="centerInside"
+            android:background="#00000000"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/IB_S_History"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/history"
+            android:scaleType="centerInside"
+            android:background="#00000000"
+
+            />
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>
