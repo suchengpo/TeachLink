@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.a303.teachlink.StudentQuestion">
+    android:background="@drawable/st_back"
+    tools:context="com.example.a303.teachlink.StudentQuestion"
+    >
 
     <TextView
         android:id="@+id/TV_Title"
@@ -16,31 +18,104 @@
         android:layout_centerHorizontal="true"
         android:text="@string/Choose_Answer"/>
 
-    <Button
-        android:id="@+id/BT_AnswerA"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A"
-        android:layout_below="@id/TV_Title"/>
+        android:orientation="vertical"
+        android:layout_below="@+id/TV_Title"
+        android:id="@+id/laout_question_a"
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="22sp"
 
-    <Button
-        android:id="@+id/BT_AnswerB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="B"
-        android:layout_below="@+id/BT_AnswerA"/>
+        >
 
-    <Button
-        android:id="@+id/BT_AnswerC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C"
-        android:layout_below="@+id/BT_AnswerB"/>
 
-    <Button
-        android:id="@+id/BT_AnswerD"
+        <Button
+            android:id="@+id/BT_AnswerA"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:text="A"
+            android:textSize="20sp"
+            android:background="#FF5809"
+            />
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="D"
-        android:layout_below="@+id/BT_AnswerC"/>
+        android:orientation="vertical"
+        android:layout_below="@+id/laout_question_a"
+        android:id="@+id/laout_question_b"
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="22sp"
+
+        >
+
+
+
+        <Button
+            android:id="@+id/BT_AnswerB"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:text="B"
+            android:textSize="20sp"
+            android:background="#4DFFFF"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/TV_Title"
+        android:id="@+id/laout_question_c"
+        android:layout_toRightOf="@+id/laout_question_a"
+        android:paddingLeft="22sp"
+        android:layout_marginTop="22sp"
+
+
+
+        >
+
+
+        <Button
+            android:id="@+id/BT_AnswerC"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:text="C"
+            android:textSize="20sp"
+            android:background="#28FF28"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/laout_question_c"
+        android:layout_toRightOf="@+id/laout_question_b"
+        android:paddingLeft="22sp"
+        android:layout_marginTop="22sp"
+
+        android:id="@+id/laout_question_d"
+
+        >
+
+
+        <Button
+            android:id="@+id/BT_AnswerD"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:text="D"
+            android:textSize="20sp"
+            android:background="#FF2D2D"
+            />
+    </LinearLayout>
+
+
 </RelativeLayout>
