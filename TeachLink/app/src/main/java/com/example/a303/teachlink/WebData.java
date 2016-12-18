@@ -94,9 +94,13 @@ public class WebData {
                     .appendQueryParameter("select",reqData.get("select"))
                     .appendQueryParameter("username", reqData.get("username"))
                     .appendQueryParameter("password", reqData.get("password"));
-            query = builder.build().getEncodedQuery();
-            Log.d("POST query",query);
+        }else if(reqData.get("select")=="c_ques"){
+            builder = builder
+                    .appendQueryParameter("select",reqData.get("select"))
+                    .appendQueryParameter("quesData", reqData.get("quesData"));
         }
+        query = builder.build().getEncodedQuery();
+        Log.d("POST query",query);
     }
 
 }

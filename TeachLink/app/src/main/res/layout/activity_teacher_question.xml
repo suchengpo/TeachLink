@@ -17,37 +17,26 @@
         android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:id="@+id/TV_Type"
+        android:id="@+id/TV_Class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Type"
+        android:text="@string/Class"
         android:layout_below="@+id/TV_Title"/>
 
     <EditText
-        android:id="@+id/ET_Type"
+        android:id="@+id/ET_Class"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TV_Type"/>
+        android:layout_below="@+id/TV_Class"/>
 
-    <TextView
-        android:id="@+id/TV_Tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Tag"
-        android:layout_below="@+id/ET_Type"/>
 
-    <EditText
-        android:id="@+id/ET_Tag"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TV_Tag"/>
 
     <TextView
         android:id="@+id/TV_Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Question"
-        android:layout_below="@+id/ET_Tag"/>
+        android:layout_below="@+id/ET_Class"/>
 
     <EditText
         android:id="@+id/ET_Question"
@@ -89,4 +78,19 @@
         android:layout_height="wrap_content"
         android:hint="@string/AnswerD"
         android:layout_below="@+id/ET_C"/>
+
+    <EditText
+        android:id="@+id/ET_Correct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AnswerCorrect"
+        android:layout_below="@+id/ET_D"/>
+
+    <Button
+        android:id="@+id/BT_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Send"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ET_Correct"/>
 </RelativeLayout>

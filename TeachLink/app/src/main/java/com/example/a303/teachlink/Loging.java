@@ -24,7 +24,9 @@ public class Loging extends AppCompatActivity {
     private User user;
     private String username,password;
     private int identity;//0:身分錯誤，1:教師，2:學生
+    //*****juiz*******
     private static Handler mHandler;
+    //***************
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ public class Loging extends AppCompatActivity {
 
         findViews();
         setBTListener();
-
+        //*****juiz*******get
         mHandler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
@@ -43,9 +45,7 @@ public class Loging extends AppCompatActivity {
                 int select=msg.what;
                 /*num 1: login*/
                 String content = bundle.getString("content");//json
-
-
-
+                //#code......................................................
                 try {
                     JSONObject obj = new JSONObject(content);
                     String job,accept;
@@ -66,10 +66,12 @@ public class Loging extends AppCompatActivity {
 
 
                 //Toast.makeText(Loging.this, content, Toast.LENGTH_SHORT).show();
+                //#code............................................................
 
 
             }
         };
+        //*****juiz*******
     }
 
 
@@ -79,6 +81,7 @@ public class Loging extends AppCompatActivity {
             public void onClick(View v) {
                 username=ET_Username.getText().toString();
                 password=ET_Password.getText().toString();
+                //********juiz*********send
                 try {
                     URL url = new URL("http://192.168.1.170");
                     ArrayMap<String , String> reqData = new ArrayMap();
@@ -91,6 +94,7 @@ public class Loging extends AppCompatActivity {
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
+                //*****************
             }
         });
     }
