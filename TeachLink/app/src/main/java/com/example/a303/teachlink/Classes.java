@@ -11,15 +11,20 @@ public class Classes implements Serializable {
     private ArrayList<User> userList=new ArrayList<User>();
     private RollCall classrollcall;
     private String classname;
+    private int accuracy;
 
-    public Classes( String classname) {
+    public Classes(String classname, int accuracy) {
         this.classname = classname;
-
+        this.accuracy = accuracy;
     }
 
+    public void setAccuracy(int accuracy) {
+        this.accuracy = accuracy;
+    }
 
-
-
+    public int getAccuracy() {
+        return accuracy;
+    }
 
     public String getClassname() {
         return classname;

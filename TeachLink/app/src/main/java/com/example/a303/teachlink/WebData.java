@@ -98,6 +98,10 @@ public class WebData {
             builder = builder
                     .appendQueryParameter("select",reqData.get("select"))
                     .appendQueryParameter("quesData", reqData.get("quesData"));
+        }else if(reqData.get("select")=="stu_ans"){
+            builder = builder
+                    .appendQueryParameter("select",reqData.get("select"))
+                    .appendQueryParameter("stuAns",reqData.get("stuAns"));
         }
         query = builder.build().getEncodedQuery();
         Log.d("POST query",query);

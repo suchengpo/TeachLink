@@ -10,7 +10,15 @@
     tools:context="com.example.a303.teachlink.TeacherHistory">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/TV_Title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Teacher History"/>
+    <!--<Spinner-->
+        <!--android:id="@+id/SP_Class"-->
+        <!--android:layout_below="@+id/TV_Title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:prompt="@string/Which_Class"></Spinner>-->
 </RelativeLayout>

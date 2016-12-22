@@ -21,8 +21,8 @@ public class User implements Serializable {
     }
 
     private void updateClasses() {//給Username抓class名回來
-        classList.add(0,new Classes("math"));
-        classList.add(1,new Classes("English"));
+        classList.add(0,new Classes("math",5));
+        classList.add(1,new Classes("English",5));
     }
 
     public String getUsername() {

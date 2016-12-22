@@ -81,6 +81,15 @@ public class Loging extends AppCompatActivity {
             public void onClick(View v) {
                 username=ET_Username.getText().toString();
                 password=ET_Password.getText().toString();
+
+                //測試
+                if (username.equals("RT")){
+                    checkIdentity(1);
+                }
+                if (username.equals("RS")){
+                    checkIdentity(2);
+                }
+                //測試
                 //********juiz*********send
                 try {
                     URL url = new URL("http://192.168.1.170");

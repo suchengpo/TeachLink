@@ -84,7 +84,7 @@ public class TeacherMain extends AppCompatActivity {
             }
             if (v.getId()==R.id.IB_T_History)
             {
-                Intent intent=new Intent(context,TeacherHistory.class);
+                Intent intent=new Intent(context,TeacherHistoryShow.class);
                 Bundle bundle=new Bundle();
                 bundle.putSerializable("user",user);
                 intent.putExtras(bundle);

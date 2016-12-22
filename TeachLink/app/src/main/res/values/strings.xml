@@ -21,6 +21,7 @@
     <string name="text_GenerateQrCode">Generate QR Code</string>
     <string name="Which_Class">Which Class?</string>
     <string name="Choose_Answer">Choose Your Answer</string>
+    <string name="Anser_is">Correct Answer is </string>
 
     <string name="ErrorMessage1">Error Username or Error Password</string>
     <string name="ErrorMessage2">Error Class Name</string>
