@@ -7,9 +7,12 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.util.ArrayMap;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -27,6 +30,7 @@ public class Loging extends AppCompatActivity {
     //*****juiz*******
     private static Handler mHandler;
     //***************
+    private ImageView loginimage,teacherlink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,17 @@ public class Loging extends AppCompatActivity {
 
         findViews();
         setBTListener();
+
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int intScreenWidth = dm.widthPixels;
+        int intScreenHeight = dm.heightPixels;
+
+        int numberevenWidth=(int) ((intScreenHeight-20)/3);
+        int numberevenHeight=intScreenHeight/5;
+
+        myimageviewsize(teacherlink,numberevenWidth,numberevenHeight);
+        myimageviewsize(loginimage,numberevenWidth,numberevenHeight);
         //*****juiz*******get
         mHandler = new Handler(){
             @Override
@@ -72,6 +87,15 @@ public class Loging extends AppCompatActivity {
             }
         };
         //*****juiz*******
+    }
+
+    private void myimageviewsize(ImageView loginimage, int numberevenWidth, int numberevenWidth1) {
+
+
+        ViewGroup.LayoutParams params = loginimage.getLayoutParams();
+        params.width = numberevenWidth;
+        params.height = numberevenWidth1;
+        loginimage.setLayoutParams(params);
     }
 
 
@@ -139,5 +163,8 @@ public class Loging extends AppCompatActivity {
         ET_Username=(EditText)findViewById(R.id.ET_Username);
         ET_Password=(EditText)findViewById(R.id.ET_Password);
         BT_Login=(Button)findViewById(R.id.BT_Login);
+        teacherlink=(ImageView) findViewById(R.id.teacherlink);
+        loginimage = (ImageView) findViewById(R.id.login_image);
+
     }
 }
