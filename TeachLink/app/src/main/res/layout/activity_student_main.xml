@@ -27,6 +27,7 @@
         android:src="@drawable/sign_in"
         android:scaleType="centerInside"
         android:background="#00000000"
+        android:layout_centerHorizontal="true"
         />
 
     <LinearLayout
@@ -61,8 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="450sp"
         android:orientation="vertical"
-        android:layout_toRightOf="@+id/laout_student_left"
-        android:layout_below="@id/IB_S_Rollcall">
+        android:layout_below="@id/IB_S_Rollcall"
+        android:layout_alignParentRight="true">
 
 
         <ImageButton

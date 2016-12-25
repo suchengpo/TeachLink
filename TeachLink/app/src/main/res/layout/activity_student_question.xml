@@ -24,8 +24,8 @@
         android:orientation="vertical"
         android:layout_below="@+id/TV_Title"
         android:id="@+id/laout_question_a"
-        android:layout_marginTop="22sp"
-        android:layout_marginLeft="22sp"
+
+
 
         >
 
@@ -35,8 +35,10 @@
             android:layout_width="250sp"
             android:layout_height="250sp"
             android:text="A"
-            android:textSize="20sp"
-            android:background="#FF5809"
+
+            android:textSize="150sp"
+            android:background="@drawable/answe_back_pink"
+
             />
 
     </LinearLayout>
@@ -47,7 +49,7 @@
         android:layout_below="@+id/laout_question_a"
         android:id="@+id/laout_question_b"
         android:layout_marginTop="22sp"
-        android:layout_marginLeft="22sp"
+
 
         >
 
@@ -58,8 +60,9 @@
             android:layout_width="250sp"
             android:layout_height="250sp"
             android:text="B"
-            android:textSize="20sp"
-            android:background="#4DFFFF"
+            android:textSize="150sp"
+            android:background="@drawable/answe_back_r"
+
             />
 
     </LinearLayout>
@@ -72,9 +75,8 @@
         android:orientation="vertical"
         android:layout_below="@+id/TV_Title"
         android:id="@+id/laout_question_c"
-        android:layout_toRightOf="@+id/laout_question_a"
-        android:paddingLeft="22sp"
-        android:layout_marginTop="22sp"
+
+        android:layout_alignParentRight="true"
 
 
 
@@ -86,8 +88,10 @@
             android:layout_width="250sp"
             android:layout_height="250sp"
             android:text="C"
-            android:textSize="20sp"
-            android:background="#28FF28"
+            android:textSize="150sp"
+            android:background="@drawable/answe_back_o"
+
+
 
             />
 
@@ -98,10 +102,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@+id/laout_question_c"
-        android:layout_toRightOf="@+id/laout_question_b"
-        android:paddingLeft="22sp"
-        android:layout_marginTop="22sp"
 
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22sp"
         android:id="@+id/laout_question_d"
 
         >
@@ -112,8 +115,9 @@
             android:layout_width="250sp"
             android:layout_height="250sp"
             android:text="D"
-            android:textSize="20sp"
-            android:background="#FF2D2D"
+            android:textSize="150sp"
+            android:background="@drawable/answe_back_g"
+
             />
     </LinearLayout>
 

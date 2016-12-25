@@ -28,7 +28,8 @@
         android:layout_height="700sp"
         android:orientation="vertical"
         android:layout_below="@+id/TV_Teacher"
-        android:id="@+id/tahome_laout_left">
+        android:id="@+id/tahome_laout_left"
+        >
 
         <ImageButton
             android:id="@+id/IB_T_Rollcall"
@@ -37,6 +38,7 @@
             android:src="@drawable/roll_table"
             android:scaleType="centerInside"
             android:background="#00000000"
+
 
             />
 
@@ -64,9 +66,10 @@
         android:layout_width="wrap_content"
         android:layout_height="700sp"
         android:orientation="vertical"
-        android:layout_toRightOf="@+id/tahome_laout_left"
+
         android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:layout_below="@+id/TV_Teacher">
+        android:layout_below="@+id/TV_Teacher"
+        android:layout_alignParentRight="true">
 
         <ImageButton
             android:id="@+id/IB_T_Question"

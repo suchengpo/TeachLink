@@ -7,12 +7,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.a303.teachlink.Loging">
+    tools:context="com.example.a303.teachlink.Loging"
+    android:background="@drawable/login_back">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/teacherlink"
+        android:id="@+id/teacherlink"
+        android:layout_centerHorizontal="true"
+        />
 
     <EditText
         android:id="@+id/ET_Username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/login_image"
         android:hint="@string/Username"/>
     <EditText
         android:id="@+id/ET_Password"
@@ -29,12 +39,13 @@
         android:layout_below="@id/ET_Password"
         android:layout_centerHorizontal="true" />
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_below="@id/BT_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherlink"
         android:src="@drawable/login_img"
-        android:layout_margin="32dp"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/login_image"
+        android:layout_centerHorizontal="true"
+        />
 
 
 </RelativeLayout>

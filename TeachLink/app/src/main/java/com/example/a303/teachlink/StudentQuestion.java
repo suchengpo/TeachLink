@@ -6,8 +6,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.util.ArrayMap;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.net.MalformedURLException;
@@ -27,6 +30,22 @@ public class StudentQuestion extends AppCompatActivity {
         setContentView(R.layout.activity_student_question);
 
         findViews();
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int intScreenWidth = dm.widthPixels;
+        int intScreenHeight = dm.heightPixels;
+
+        int numberevenWidth= ((intScreenWidth)/3);
+        int numberevenHeight=(intScreenHeight/3);
+        myimageviewsize(BT_AnswerA,numberevenWidth,numberevenHeight);
+        myimageviewsize(BT_AnswerB,numberevenWidth,numberevenHeight);
+        myimageviewsize(BT_AnswerC,numberevenWidth,numberevenHeight);
+        myimageviewsize(BT_AnswerD,numberevenWidth,numberevenHeight);
+        BT_AnswerA.setTextSize((intScreenHeight)/12);
+        BT_AnswerB.setTextSize((intScreenHeight)/12);
+        BT_AnswerC.setTextSize((intScreenHeight)/12);
+        BT_AnswerD.setTextSize((intScreenHeight)/12);
+
         Bundle bundle=getIntent().getExtras();
         user=(User) bundle.getSerializable("user");
 
@@ -53,6 +72,15 @@ public class StudentQuestion extends AppCompatActivity {
         }
     }
 
+
+    private void myimageviewsize(Button loginimage, int numberevenWidth, int numberevenWidth1) {
+
+
+        ViewGroup.LayoutParams params = loginimage.getLayoutParams();
+        params.width = numberevenWidth;
+        params.height = numberevenWidth1;
+        loginimage.setLayoutParams(params);
+    }
     private void setListener() {
         BT_AnswerA.setOnClickListener(listener);
         BT_AnswerB.setOnClickListener(listener);

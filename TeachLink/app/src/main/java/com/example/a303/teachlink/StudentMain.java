@@ -4,8 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class StudentMain extends AppCompatActivity {
@@ -19,6 +22,24 @@ public class StudentMain extends AppCompatActivity {
         setContentView(R.layout.activity_student_main);
 
         findViews();
+
+
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int intScreenWidth = dm.widthPixels;
+        int intScreenHeight = dm.heightPixels;
+
+        int numberevenWidth= ((intScreenHeight)/4);
+        int numberevenHeight=(intScreenHeight/5);
+
+
+
+        myimageviewsize(IB_Rollcall,numberevenWidth,numberevenHeight);
+        myimageviewsize(IB_Question,numberevenWidth,numberevenHeight);
+        myimageviewsize(IB_Discuss,numberevenWidth,numberevenHeight);
+        myimageviewsize(IB_Analyze,numberevenWidth,numberevenHeight);
+        myimageviewsize(IB_History,numberevenWidth,numberevenHeight);
+
         Bundle bundle=getIntent().getExtras();
         user=(User) bundle.getSerializable("user");
         if (user !=null)
@@ -26,6 +47,15 @@ public class StudentMain extends AppCompatActivity {
             TV_Student.setText(getString(R.string.Welcome)+"  "+user.getUsername());
             setListener();
         }
+    }
+
+    private void myimageviewsize(ImageView loginimage, int numberevenWidth, int numberevenWidth1) {
+
+
+        ViewGroup.LayoutParams params = loginimage.getLayoutParams();
+        params.width = numberevenWidth;
+        params.height = numberevenWidth1;
+        loginimage.setLayoutParams(params);
     }
 
     private void setListener() {
